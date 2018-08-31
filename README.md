@@ -66,6 +66,6 @@ our server used django platform to and a rest API to save data in SQL server.
 	* user id is  id of a specific user
 
 
-## 2. Parrot web site :
+## 2. Parrot web site
 
 It's easy! Just copy **www** to your /var/ folder and go to  your localhost in your browser. You should run your ros server already.
