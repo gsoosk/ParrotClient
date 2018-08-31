@@ -1,0 +1,66 @@
+.play-btn {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 34px;
+    border-color: transparent transparent transparent #e60000;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 15px 0 15px 27px;
+}
+.play-btn.pause-btn {
+    border-style: double;
+    border-width: 0px 0 0px 27px;
+    border-color: transparent transparent transparent #00a533;
+}
+.play-btn.pause-btn:hover{
+    border-color: transparent transparent transparent #006b20;
+
+}
+.play-btn:hover {
+    border-color: transparent transparent transparent #930000;
+}
+
+
+.play-motor-btn {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 34px;
+    border-color: transparent transparent transparent #00a1bd;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 15px 0 15px 27px;
+}
+.play-motor-btn.pause-motor-btn {
+    border-style: double;
+    border-width: 0px 0 0px 27px;
+}
+.play-motor-btn:hover {
+    border-color: transparent transparent transparent #0084bd;
+}
+
+.play-lightWheel-btn {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 34px;
+    border-color: transparent transparent transparent #00a1bd;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 15px 0 15px 27px;
+}
+.play-lightWheel-btn.pause-lightWheel-btn {
+    border-style: double;
+    border-width: 0px 0 0px 27px;
+}
+.play-lightWheel-btn:hover {
+    border-color: transparent transparent transparent #0084bd;
+}
+
