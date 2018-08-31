@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="parrot">Parrot</h1>
+<h1 id="getting-started">Getting started</h1>
+<p>To use parrot web site you should follow bellow instructions.</p>
+<h2 id="python-django-server">1. Python django server</h2>
+<p>This server is using to save users login and their commands.<br>
+our server used django platform to and a rest API to save data in SQL server.</p>
+<ol>
+<li>Step One : <strong>Installing python3</strong></li>
+</ol>
+<blockquote>
+<p>if you have python3 already skip this step</p>
+</blockquote>
+<ul>
+<li>
+<p>MacOS :</p>
+<blockquote></blockquote>
+<pre><code> brew install python3 
+</code></pre>
+</li>
+<li>
+<p>Linux :</p>
+<blockquote></blockquote>
+<pre><code>  sudo apt-get update
+  sudo apt-get install python3.6
+</code></pre>
+</li>
+</ul>
+<ol start="2">
+<li>Step Two : <strong>Installing pip3</strong></li>
+</ol>
+<blockquote>
+<p>if you have pip3 already skip this step</p>
+</blockquote>
+<ul>
+<li>MacOs :
+<blockquote></blockquote>
+<pre><code>  brew install pip3
+</code></pre>
+</li>
+<li>Linux :
+<blockquote></blockquote>
+<pre><code>  sudo apt-get install python3-pip
+</code></pre>
+</li>
+</ul>
+<ol start="3">
+<li>Step Three : <strong>Installing django and dependencies</strong>
+<ul>
+<li>First we installing django :
+<blockquote></blockquote>
+<pre><code>  pip3 install django 
+</code></pre>
+</li>
+<li>Because we are using rest API django need it’s own framework for django rest which is <em>django_rest</em>. we installing it using this :
+<blockquote></blockquote>
+<pre><code>  pip3 install djangorestframework
+  pip3 install markdown 
+  pip3 install django-filter
+</code></pre>
+Notice : markdown and django-filter are ordinary packages and can not be installed</li>
+<li>We don’t have an online server and we run our server on our device so we should install an cross origin sharing resource to use cross-domain request. so we used to install <em>django-cors-headers</em> :
+<blockquote></blockquote>
+<pre><code>  pip3 install django-cors-headers
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Step Four : <strong>starting django server</strong></li>
+</ol>
+<ul>
+<li>First you should copy <strong>“serverSide”</strong> folder somewhere which have not specefic permissions.(Like Desktop/)</li>
+<li>Then go to that repository  and then
+<ul>
+<li>If you want to delete old datas from database use this command :</li>
+</ul>
+<blockquote></blockquote>
+<pre><code>  python3 manage.py flush
+</code></pre>
+Notice : its necessary for first use.
+<ul>
+<li>Then you can run your server with this command :</li>
+</ul>
+<blockquote></blockquote>
+<pre><code>  python3 manage.py runserver
+</code></pre>
+</li>
+</ul>
+<p><strong>You runned your server and our website can use this server to store data</strong></p>
+<ul>
+<li>
+<p>For seeing Users that logined from website you can see this url on your browser.</p>
+<blockquote></blockquote>
+<pre><code>  127.0.0.1:8000/Log/
+</code></pre>
+</li>
+<li>
+<p>For seeing all commands that comes from website you can see this url on your browser.</p>
+<blockquote></blockquote>
+<pre><code>  127.0.0.1:8000/Command/
+</code></pre>
+</li>
+<li>
+<p>For seeing commands of a specific user that comes from website you can see this url on your browser.</p>
+<blockquote></blockquote>
+<pre><code>  127.0.0.1:8000/Command/&lt;user_id&gt;/
+</code></pre>
+<ul>
+<li>user id is  id of a specific user</li>
+</ul>
+</li>
+</ul>
+<h2 id="parrot-web-site-">2. Parrot web site :</h2>
+<p>It’s easy! Just copy <strong>www</strong> to your /var/ folder and go to  your localhost in your browser. You should run your ros server already.</p>
+</div>
+</body>
+
+</html>
